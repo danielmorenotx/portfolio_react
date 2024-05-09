@@ -1,0 +1,72 @@
+#home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-info {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#oregon-eclipse {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.subheaders {
+    text-align: center;
+}
+
+#gallery-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding:20px;
+}
+
+.album-cover {
+    transition: transform 0.3s ease;
+    max-height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.album-cover:hover {
+    transform: scale(1.05);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    #home-section {
+        flex-direction: row;
+    }
+
+    #oregon-eclipse {
+        width: 500px;
+    }
+
+    .gallery-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .row {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+}

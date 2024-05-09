@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    .page-format {
+        background-color: white;
+        width: 1100px;
+    }
+}
