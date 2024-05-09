@@ -4,8 +4,7 @@ const About = () => {
             <div className="home-info">
                 <h2 className="subheaders">About Me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non, nostrum culpa iste itaque vel eos, quibusdam modi consequatur officia molestiae consectetur. Cumque ut perferendis excepturi magnam ullam accusantium in.
-                    Nihil cum, unde velit iure fugiat commodi nulla, odio architecto consectetur, atque totam dolor temporibus blanditiis molestias! Enim nisi hic illum doloremque eos. Quo vitae beatae quia optio asperiores. Laborum.
+                    Daniel is a software developer in training at Indeed. Before starting Indeed's apprenticeship porgram, he worked for almost 9 years on the Trust & Safety team, during which he held multiple roles and specialized in querying data and training other members of the Trust & Safety team to write efficient queries as well.
                 </p>
             </div>
             <img src="images/oregon_eclipse.jpg" alt="Oregon eclipse" id="oregon-eclipse"></img>

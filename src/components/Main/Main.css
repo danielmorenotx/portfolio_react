@@ -12,9 +12,7 @@
 }
 
 #oregon-eclipse {
-    max-width: 100%;
-    border-radius: 10px;
-    margin: 5%;
+    display: none;
 }
 
 .subheaders {
@@ -45,13 +43,21 @@
     text-align: center;
 }
 
+.skills {
+    width: 150px;
+    padding: 20px;
+}
+
 @media screen and (min-width: 800px) {
     #home-section {
         flex-direction: row;
     }
 
     #oregon-eclipse {
+        display: block;
         width: 500px;
+        border-radius: 10px;
+        margin: 5%;
     }
 
     .gallery-info {
