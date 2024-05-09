@@ -1,13 +1,22 @@
+import List from "../List/List"
 import "./Header.css"
 
 const Header = () => {
+    const listObjects = [
+        {href: "#about-section", name: "About"},
+        {href: "#gallery-section", name: "Gallery"},
+        {href: "#contact-section", name: "Contact"},
+    ]
+
     return (
         <section className="heading-nav">
             <nav>
-                <div><a href="#home-section">Home</a></div>
-                <div><a href="#gallery-section">Gallery</a></div>
-                <div><a href="#about-section">About</a></div>
-                <div><a href="#contact-section">Contact</a></div>
+                {
+                    listObjects.map((list, index) => <List 
+                    key={index}
+                    href={list.href}
+                    name={list.name}/>)
+                }
             </nav>
             <h1>Daniel Moreno website</h1>
             <img src="images/me.JPEG" alt="picture of me" id="picture-of-me"></img>
