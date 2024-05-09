@@ -26,7 +26,7 @@ const Projects = () => {
                         src={project.src}
                         alt={project.alt}
                         className={project.className}/>)})
-                };
+                }
                 </div>
                 <div className="row">
                 {
@@ -39,7 +39,7 @@ const Projects = () => {
                         src={project.src}
                         alt={project.alt}
                         className={project.className}/>)})
-                };
+                }
                 </div>
             </div>
         </section>  
