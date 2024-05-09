@@ -43,9 +43,17 @@
     text-align: center;
 }
 
-.skills {
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 150px;
+    height: 150px;
     padding: 20px;
+}
+
+#skill-container {
+    display: flex;
 }
 
 @media screen and (min-width: 800px) {

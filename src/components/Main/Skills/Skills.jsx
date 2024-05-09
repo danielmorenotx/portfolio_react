@@ -2,15 +2,15 @@ import ProjectCard from "../../ProjectCard/ProjectCard";
 
 const Skills = () => {
     const cardData = [
-        {src: "./images/skills/html.svg", alt: "html", name: "HTML" ,className: "skills"},
-        {src: "./images/skills/css.svg", alt: "css", name: "CSS",className: "skills"},
-        {src: "./images/skills/javascript.svg", alt: "javascript", name: "Javascript",className: "skills"},
-        {src: "./images/skills/python.svg", alt: "python", name: "Python",className: "skills"},
-        {src: "./images/skills/git.svg", alt: "git", name: "git",className: "skills"},
-        {src: "./images/skills/postgresql.svg", alt: "postgresql", name: "PostgreSQL", className: "skills"},
-        {src: "./images/skills/java.svg", alt: "java", name: "Java",className: "skills"},
-        {src: "./images/skills/spring.svg", alt: "spring", name: "Spring",className: "skills"},
-        {src: "./images/skills/react.svg", alt: "react", name: "React",className: "skills"}
+        {src: "./images/skills/html.svg", alt: "html", name: "HTML" , className: "skill"},
+        {src: "./images/skills/css.svg", alt: "css", name: "CSS", className: "skill"},
+        {src: "./images/skills/javascript.svg", alt: "javascript", name: "Javascript", className: "skill"},
+        {src: "./images/skills/python.svg", alt: "python", name: "Python", className: "skill"},
+        {src: "./images/skills/git.svg", alt: "git", name: "git", className: "skill"},
+        {src: "./images/skills/postgresql.svg", alt: "postgresql", name: "PostgreSQL", className: "skill"},
+        {src: "./images/skills/java.svg", alt: "java", name: "Java", className: "skill"},
+        {src: "./images/skills/spring.svg", alt: "spring", name: "Spring", className: "skill"},
+        {src: "./images/skills/react.svg", alt: "react", name: "React", className: "skill"}
     ]
 
     return (
@@ -28,11 +28,6 @@ const Skills = () => {
                                 className={card.className}/>
                         )
                     })
-                }
-            </div>
-            <div className="row">
-                {
-
                 }
             </div>
         </section>
