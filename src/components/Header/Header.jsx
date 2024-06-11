@@ -10,6 +10,7 @@ const Header = () => {
 
     return (
         <section className="heading-nav">
+            <h1>Daniel Moreno</h1>
             <nav>
                 {
                     listObjects.map((list, index) => <List 
@@ -18,8 +19,6 @@ const Header = () => {
                     name={list.name}/>)
                 }
             </nav>
-            <h1>Daniel Moreno website</h1>
-            <img src="images/me.JPEG" alt="picture of me" id="picture-of-me"></img>
         </section>
     );
 };
