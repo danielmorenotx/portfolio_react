@@ -4,7 +4,17 @@
     flex-direction: column;
 }
 
+.heading-nav h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    padding-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 nav {
+    position: fixed;
+    right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
