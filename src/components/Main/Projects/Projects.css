@@ -5,14 +5,12 @@
     padding:20px;
 }
 
-.card-link {
+.card-link-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
     width: 300px;
     height: 200px;
     border: 1px black solid;
@@ -20,15 +18,46 @@
     border-radius: 10px;
     margin: 10px;
     transition: transform 0.3s ease;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+    position: relative; /* use container as reference point */
+    overflow: hidden; /* Hide overflow during transition */
 }
 
-.card-link:visited {
+.card-link-container:visited {
     color: white; /* Ensure visited links remain white */
 
 }
 
-.card-link:hover {
+.card-link-container:hover {
     transform: scale(1.05);
+}
+
+.project-name {
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1; /* Ensure it's above the description initially */
+}
+
+.project-description {
+    font-size: 16px;
+    position: absolute; /* Position it within the card container */
+    bottom: -100%; /* Start from below the container */
+    width: 100%; /* Cover the full width */
+    height: 100%; /* Cover the full height */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: bottom 0.3s ease-in-out; /* Animate the bottom property */
+    border-radius: 10px; /* Match the border radius of the container */
+    opacity: 0;
+}
+
+.card-link-container:hover .project-description {
+    bottom: -8%; /* slides up and covers the container */
+    opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {
