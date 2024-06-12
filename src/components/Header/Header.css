@@ -1,7 +1,7 @@
 .heading-nav {
-    border: black solid;        
+    border: none;        
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .heading-nav h1 {
@@ -51,7 +51,59 @@ nav {
     transform: scale(1.1);
 }
 
+.heading-content {
+    width: 100%;
+}
+
+.full-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    background: transparent;
+    color: black;
+    font-size: 40px;
+    height: 50px;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    position: static;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .full-nav {
+        display: flex;
+        justify-content: center;
+        /* dimentions of header */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* =================== */
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999; /* Ensure it's on top of other content */
+        transform: translateY(-100vh); /* moves menu out of viewport */
+        transition: transform 1s ease-in-out; /* makes the transition smooth */
+    }
+
+    .full-nav.open { /* visible state of menu */
+        /* moves menue into view with established dimensions */
+        transform: translateY(0);
+    }
+
+    .nav-close-button {
+        color: white;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    header {
+        border: solid black;
+    }
+    
     .heading-nav {
         border: black solid;
         display: flex;
@@ -65,8 +117,12 @@ nav {
         height: 100vh; /* Sets the height to full viewport height */
     }
 
-    nav {
+    .heading-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .nav-button {
+        display: none
     }
 }
