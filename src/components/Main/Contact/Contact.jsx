@@ -4,6 +4,9 @@ const Contact = () => {
 
     return (
         <section id="contact-section">
+            <h2 className="subheaders">Want to get in touch?</h2>
+            <p>Fill out this form to send me an email!</p>
+
             <form action="/submit-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required></input>

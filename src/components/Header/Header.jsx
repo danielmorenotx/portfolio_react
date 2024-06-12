@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <section className="heading-nav">
-            <h1>Daniel Moreno</h1>
+            <h1><img src="./images/Daniel_logo.png" alt="Daniel Moreno" title="Daniel Moreno"/></h1>
             <nav>
                 {
                     listObjects.map((list, index) => <List 
