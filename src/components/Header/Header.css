@@ -20,9 +20,9 @@ nav {
     align-items: center;
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
+.header-link {
+    list-style: none;
+    color: white;
     padding: 5px 15px;
     transition: background-color 0.3s;
     margin: 10px 0px;
@@ -31,12 +31,24 @@ nav a {
     line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: white;
     text-shadow: -2px -2px black, 2px -2px black, -2px 2px black, 2px 2px black;
 }
 
-nav a:hover {
-    background-color: #acacac;
+.header-link a {
+    text-decoration: none;
+}
+
+/* Explicitly style visited links */
+.header-link a:visited {
+    color: white; /* Ensure visited links remain white */
+}
+
+/* Hover and active effects for the navigation links */
+.header-link a:hover,
+.header-link a:focus,
+.header-link a:active {
+    color: rgb(143, 138, 138); 
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 1024px) {
