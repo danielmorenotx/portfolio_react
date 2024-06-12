@@ -1,4 +1,3 @@
-import ProjectCard from "../../ProjectCard/ProjectCard";
 
 const Skills = () => {
     const cardData = [
@@ -17,18 +16,7 @@ const Skills = () => {
         <section>
             <h2 className="subheaders">Skills</h2>
             <div className="row">
-                {
-                    cardData.map((card, index) => {
-                        return (
-                            <ProjectCard
-                                key={index}
-                                src={card.src}
-                                alt={card.alt}
-                                name={card.name}
-                                className={card.className}/>
-                        )
-                    })
-                }
+
             </div>
         </section>
     )

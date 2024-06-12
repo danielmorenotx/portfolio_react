@@ -1,4 +1,3 @@
-import ProjectCard from "../../ProjectCard/ProjectCard"
 import "./Projects.css"
 
 const Projects = () => {
@@ -27,7 +26,7 @@ const Projects = () => {
                 <div className="row">
                 {projectCardData.map((project, index) => {
                         return (
-                    <a href={project.href } target="_blank" className="card-link-container">
+                    <a key={index} href={project.href } target="_blank" className="card-link-container">
                         <h3 className="project-name">{project.name}</h3>
                         <p className="project-description">{project.description}</p>
                     </a>)})}

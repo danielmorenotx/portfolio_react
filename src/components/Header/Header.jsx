@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import List from "../List/List"
 import "./Header.css"
 
 const Header = () => {
