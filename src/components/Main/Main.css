@@ -19,24 +19,6 @@
     text-align: center;
 }
 
-#gallery-section {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    padding:20px;
-}
-
-.album-cover {
-    transition: transform 0.3s ease;
-    max-height: 200px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.album-cover:hover {
-    transform: scale(1.05);
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -66,14 +48,6 @@
         width: 500px;
         border-radius: 10px;
         margin: 5%;
-    }
-
-    .gallery-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden;
     }
 
     .row {

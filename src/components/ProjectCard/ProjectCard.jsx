@@ -1,7 +1,12 @@
 
 const ProjectCard = (props) => {
     return (
-        <a href={props.href} target={props.target}><img src={props.src} alt={props.alt} className={props.className}></img><p>{props.name}</p></a>
+        <a href={props.href } target={props.target}>
+            {/* className="project-card" */}
+            <div className={props.className}>
+                <p>{props.name}</p>
+            </div>
+        </a>
     )
 }
 
