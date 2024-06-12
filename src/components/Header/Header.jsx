@@ -4,7 +4,8 @@ import "./Header.css"
 const Header = () => {
     const listObjects = [
         {href: "#about-section", name: "About"},
-        {href: "#gallery-section", name: "Gallery"},
+        {href: "#gallery-section", name: "My Work"},
+        {href: "#followme-section", name: "Follow Me"},
         {href: "#contact-section", name: "Contact"},
     ]
 

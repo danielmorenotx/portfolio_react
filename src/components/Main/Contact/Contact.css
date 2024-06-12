@@ -1,7 +1,3 @@
-.contact-info {
-    text-align: center;
-}
-
 #contact-section {
     display: flex;
     flex-direction: column;
@@ -58,6 +54,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 800px) {
+
     form {
         width: 400px;
     }
