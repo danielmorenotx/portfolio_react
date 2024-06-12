@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header"
 import Main from "./components/Main/Main"
-import Footer from "./components/Footer/Footer"
+import FollowMe from "./components/Main/FollowMe/FollowMe"
+import Contact from "./components/Main/Contact/Contact"
 
 import "./App.css"
 
@@ -9,7 +10,6 @@ const App = () => {
     <>
       <Header />
       <Main />
-      <Footer />
     </>
   )
 }
