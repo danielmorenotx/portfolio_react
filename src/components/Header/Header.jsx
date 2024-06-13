@@ -13,15 +13,22 @@ const Header = () => {
         event.preventDefault(); // prevents default anchor behavior
         const offset = 250; // sets value of my offset for then scroll
 
-        const section = document.querySelector(sectionId);
-        const sectionTop = section.getBoundingClientRect().top + window.scrollY - offset;
+        const section = document.querySelector(sectionId); // finds first DOM matching element
 
-        window.scrollTo({
-            top: sectionTop,
-            behavior: "smooth"
+        // calculate scroll position
+        //
+        const sectionTop = 
+            section.getBoundingClientRect() // provides the size of an element provided and position relative to viewport
+            .top //returns the distance from the top
+            + window.scrollY // returns number of pixels the doc is currently scrolled vertically
+            - offset; // subtracts what we want it to be offset by (length of header in this case)
+
+        window.scrollTo({ // scrollTo scrolls to particular coordinates
+            top: sectionTop, // vertical scroll position
+            behavior: "smooth" // how it scrolls to the position
         });
 
-        event.currentTarget.blur();
+        event.currentTarget.blur(); // removes focus after clicked
     }
 
 
