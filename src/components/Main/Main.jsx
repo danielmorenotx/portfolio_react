@@ -3,6 +3,7 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills"
 import FollowMe from "./FollowMe/FollowMe";
 import Contact from "./Contact/Contact";
+import Footer from "../Footer/Footer";
 import "./Main.css"
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
             <Projects />
             <FollowMe />
             <Contact />
+            <Footer />
         </main>
     );
 };
