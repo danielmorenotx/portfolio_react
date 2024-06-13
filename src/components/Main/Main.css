@@ -1,24 +1,3 @@
-#about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about-info {
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-#oregon-eclipse {
-    display: none;
-}
-
-.subheaders {
-    text-align: center;
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -39,22 +18,10 @@
 }
 
 @media screen and (min-width: 800px) {
-    #about-section {
-        flex-direction: row;
-    }
-
-    #oregon-eclipse {
-        display: block;
-        width: 500px;
-        border-radius: 10px;
-        margin: 5%;
-    }
-
     .row {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
         width: 100%;
     }
-
 }
