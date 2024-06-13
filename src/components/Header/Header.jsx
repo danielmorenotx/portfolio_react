@@ -36,7 +36,7 @@ const Header = () => {
         <header className="heading-nav">
             <div className="heading-content">
                 
-                <h1><img src="./images/Daniel_logo.png" alt="Daniel Moreno" title="Daniel Moreno"/></h1>
+                <h1><img src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></h1>
                 
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">

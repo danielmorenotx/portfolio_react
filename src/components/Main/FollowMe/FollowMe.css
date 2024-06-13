@@ -11,10 +11,10 @@
     font-size: 10em;
     color: #3b3a5e;
     margin: 20px;
-    transition: transform 0.3s, color 0.3s; /* Add transition for hover effects */
+    transition: transform 0.3s, color 0.3s;
 }
 
 .social-icon:hover {
-    color: #ff6600; /* Change color on hover */
-    transform: scale(1.1); /* Slightly increase the size on hover */
+    color: #ff6600;
+    transform: scale(1.1);
 }
