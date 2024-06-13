@@ -29,12 +29,14 @@ const Projects = () => {
             <h2 className="subheaders">Check Out My Work</h2>
             <div className="gallery-info">
                 <div className="row">
-                {projectCardData.map((project, index) => {
+                {
+                projectCardData.map((project, index) => {
                         return (
                     <a key={index} href={project.href } target="_blank" className="card-link-container">
                         <h3 className="project-name">{project.name}</h3>
                         <p className="project-description">{project.description}</p>
-                    </a>)})}
+                    </a>)})
+                }
                 </div>
             </div>
         </section>  
