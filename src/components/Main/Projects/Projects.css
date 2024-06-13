@@ -30,6 +30,7 @@
 
 .card-link-container:hover {
     transform: scale(1.05);
+    border: blue 3px solid;
 }
 
 .project-name {
@@ -51,7 +52,6 @@
     align-items: center;
     z-index: 999;
     transition: bottom 0.3s ease-in-out; /* Animate the bottom property */
-    border-radius: 10px; /* Match the border radius of the container */
     opacity: 0;
 }
 
