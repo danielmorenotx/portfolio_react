@@ -16,6 +16,11 @@ const Projects = () => {
             href:"https://github.com/danielmorenotx/coding_problems",
             name: "Coding Problems",
             description: "If you're having trouble solving some coding problems, you can use my answers as a guide."
+        },
+        {
+            href:"https://github.com/danielmorenotx/java_dictionary_app",
+            name: "Java Dictionary App",
+            description: "This was my first Java Project. It allows you to enter words and their definitions. You can then search the words based on different criteria."
         }
     ]
 
