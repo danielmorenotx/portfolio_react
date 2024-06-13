@@ -18,7 +18,7 @@ const Header = () => {
                 
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
-                        <li className="header-link"><a href="#about-section" className="header-link">About</a></li>
+                        <li className="header-link"><a href="#" className="header-link">About</a></li>
                         <li className="header-link"><a href="#gallery-section" className="header-link">My Work</a></li>
                         <li className="header-link"><a href="#followme-section" className="header-link">Follow Me</a></li>
                         <li className="header-link"><a href="#contact-section" className="header-link">Contact</a></li>

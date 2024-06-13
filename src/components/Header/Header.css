@@ -41,6 +41,11 @@ nav {
     transform: scale(1.1);
 }
 
+/* reset the color when the link is not hovered or focused */
+.header-link a:focus:not(:hover) {
+    color: white;
+}
+
 .heading-content {
     width: 100%;
 }
