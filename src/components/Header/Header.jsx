@@ -16,7 +16,6 @@ const Header = () => {
         const section = document.querySelector(sectionId); // finds first DOM matching element
 
         // calculate scroll position
-        //
         const sectionTop = 
             section.getBoundingClientRect() // provides the size of an element provided and position relative to viewport
             .top //returns the distance from the top
