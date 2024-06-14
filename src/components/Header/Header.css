@@ -15,7 +15,7 @@ nav {
 .header-link {
     list-style: none;
     padding: 5px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, filter 0.3s, transform 0.3s;
     margin: 10px 0px;
     font-weight: bold;
     font-size: 40px;
@@ -38,8 +38,11 @@ nav {
 .header-link a:hover,
 .header-link a:focus,
 .header-link a:active {
-    color: rgb(143, 138, 138); 
-    transform: scale(1.1);
+    filter: drop-shadow(0 0 .75rem rgb(40, 40, 40));
+}
+
+.header-link:hover {
+    transform: scale(1.05);
 }
 
 /* reset the color when the link is not hovered or focused */

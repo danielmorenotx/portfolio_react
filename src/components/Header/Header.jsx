@@ -46,7 +46,7 @@ const Header = () => {
                             <a href="#gallery-section" className="header-link" onClick={(e) => handleNavClick(e, "#gallery-section")}>My Work</a>
                         </li>
                         <li className="header-link">
-                            <a href="#followme-section" className="header-link">Follow Me</a>
+                            <a href="#followme-section" className="header-link" onClick={(e) => handleNavClick(e, "#followme-section")}>Follow Me</a>
                         </li>
                         <li className="header-link">
                             <a href="#contact-section" className="header-link">Contact</a>

@@ -5,6 +5,7 @@
     padding:20px;
 }
 
+
 .card-link-container {
     display: flex;
     flex-direction: column;
@@ -17,10 +18,11 @@
     background-color: rgb(203, 204, 225);
     border-radius: 10px;
     margin: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s;
     text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
-    position: relative; /* use container as reference point */
-    overflow: hidden; /* Hide overflow during transition */
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
 }
 
 .card-link-container:visited {
@@ -31,6 +33,7 @@
 .card-link-container:hover {
     transform: scale(1.05);
     border: blue 3px solid;
+    filter: drop-shadow(0 0 1rem rgb(40, 40, 40));
 }
 
 .project-name {
@@ -69,4 +72,7 @@
         overflow: hidden;
     }
 
+    .card-link-container {
+        margin: 40px;
+    }
 }
