@@ -5,6 +5,11 @@
     padding:20px;
 }
 
+.projects-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .card-link-container {
     display: flex;
@@ -18,7 +23,7 @@
     border: 1px black solid;
     background-color: rgb(203, 204, 225);
     border-radius: 10px;
-    margin: 10px;
+    margin: 30px;
     transition: transform 0.3s ease, filter 0.3s, border 0.3s;
     position: relative;
     overflow: hidden;
@@ -45,7 +50,7 @@
 .project-description {
     font-size: 16px;
     position: absolute; /* Position it within the card container */
-    bottom: -100%; /* Start from below the container */
+    bottom: -110%; /* Start from below the container */
     width: 100%; /* Cover the full width */
     height: 100%; /* Cover the full height */
     background-color: rgb(244, 247, 248);
@@ -56,6 +61,7 @@
     z-index: 999;
     transition: bottom 0.3s ease-in-out; /* Animate the bottom property */
     opacity: 0;
+    padding: 5px;
 }
 
 .card-link-container:hover .project-description {
