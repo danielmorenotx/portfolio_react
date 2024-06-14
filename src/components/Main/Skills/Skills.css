@@ -39,7 +39,9 @@
     gap: 5rem;
 }
 
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (min-width: 1025px) {
     .skills {
         display: flex;
         justify-content: space-evenly;
