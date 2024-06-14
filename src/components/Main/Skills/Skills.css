@@ -3,8 +3,16 @@
     flex-direction: column;
 }
 
+.all-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
 .skills {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -19,11 +27,16 @@
     width: 100px;
 }
 
+.certifications {
+    text-align: center;
+}
+
 .badge {
     width: 250px;
     transition: transform 0.3s, filter 0.3s;
     cursor: pointer;
     filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+    margin: 20px;
 }
 
 .badge:hover {
@@ -32,18 +45,46 @@
 
 }
 
-.certifications {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+/* =========== MEDIUM SCREENS ============ */
+@media screen and (min-width: 768px) {
+    .all-skills {
+        flex-direction: column;
+    }
+
+    .skills {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .skill-icon {
+        width: 100px;
+    }
+
+    .certifications {
+        vertical-align: top;
+    }
 }
 
-
-
+/* ======= LARGE SCREENS ========= */
 @media screen and (min-width: 1025px) {
+    .all-skills {
+        flex-direction: column;
+    }
+    
     .skills {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .skill-icon {
+        width: 100px;
+    }
+
+    .certifications {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
     }
 }

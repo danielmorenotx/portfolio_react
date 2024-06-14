@@ -26,31 +26,36 @@ const Skills = () => {
     return (
         <section className="skills-section">
             <h2 className="subheaders">Skills</h2>
-            <div className="skills">
-                {
-                skillsCardData.map((skill, index) => {
-                        return (
-                            <div key={index}>
-                                <img className="skill-icon" src={skill.src} alt={skill.alt}/>
-                                <p>{skill.name}</p>
-                            </div>
-                        )
-                    })
-                }
+            <div className="all-skills">
+                <div className="skills">
+                    {
+                    skillsCardData.map((skill, index) => {
+                            return (
+                                <div key={index}>
+                                    <img className="skill-icon" src={skill.src} alt={skill.alt}/>
+                                    <p>{skill.name}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div className="skills">
+                    {
+                    skillsCardData2.map((skill, index) => {
+                            return (
+                                <div key={index}>
+                                    <img src={skill.src} alt={skill.alt} className="skill-icon"/>
+                                    <p>{skill.name}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
-            <div className="skills">
-                {
-                skillsCardData2.map((skill, index) => {
-                        return (
-                            <div key={index}>
-                                <img src={skill.src} alt={skill.alt} className="skill-icon"/>
-                                <p>{skill.name}</p>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+            
+            
             <h2 className="subheaders">Certifications</h2>
+            
             <div className="certifications">
                 {
                 certificateCardData.map((certificate, index) => {
