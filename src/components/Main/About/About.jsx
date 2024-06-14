@@ -21,7 +21,7 @@ const About = () => {
                     Daniel is excited to continue applying his diverse skill set at Indeed and is enthusiastic about pursuing side projects that he is now empowered to create.
                 </p>
             </div>
-            <img src="images/picture_of_me.jpg" alt="Oregon eclipse" id="oregon-eclipse"></img>
+            <img src="images/picture_of_me.jpg" alt="Picture of me" className="about-picture"></img>
         </section>
     )
 }

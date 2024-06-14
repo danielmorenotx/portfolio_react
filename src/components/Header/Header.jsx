@@ -11,7 +11,7 @@ const Header = () => {
 
     const handleNavClick = (event, sectionId) => {
         event.preventDefault(); // prevents default anchor behavior
-        const offset = 250; // sets value of my offset for then scroll
+        const offset = 200; // sets value of my offset for then scroll
 
         const section = document.querySelector(sectionId); // finds first DOM matching element
 
@@ -43,7 +43,7 @@ const Header = () => {
                             <a href="#" className="header-link">About</a>
                         </li>
                         <li className="header-link">
-                            <a href="#gallery-section" className="header-link" onClick={(e) => handleNavClick(e, "#gallery-section")}>My Work</a>
+                            <a href="#gallery-section" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</a>
                         </li>
                         <li className="header-link">
                             <a href="#followme-section" className="header-link" onClick={(e) => handleNavClick(e, "#followme-section")}>Follow Me</a>

@@ -94,4 +94,9 @@
         align-items: center;
         margin: 0 auto;
     }
+
+    .badge {
+        margin: 50px;
+        width: 250px;
+    }
 }
