@@ -25,19 +25,17 @@ const Projects = () => {
     ]
 
     return (
-        <section id="gallery-section">
+        <section id="projects-section">
             <h2 className="subheaders">Check Out My Work</h2>
-            <div className="gallery-info">
-                <div className="row">
+            <div className="projects-info">
                 {
                 projectCardData.map((project, index) => {
                         return (
-                    <a key={index} href={project.href } target="_blank" className="card-link-container">
+                    <a key={index} className="card-link-container" href={project.href } target="_blank" >
                         <h3 className="project-name">{project.name}</h3>
                         <p className="project-description">{project.description}</p>
                     </a>)})
                 }
-                </div>
             </div>
         </section>  
     )
