@@ -28,7 +28,10 @@
 }
 
 .certifications {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .badge {
@@ -61,7 +64,11 @@
     }
 
     .certifications {
-        vertical-align: top;
+        flex-direction: row;
+    }
+
+    .badge {
+        width: 200px;
     }
 }
 
