@@ -17,6 +17,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 230px;
+    padding-bottom: 150px;
 }
 
 @media screen and (min-width: 1025) {

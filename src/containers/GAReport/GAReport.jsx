@@ -1,7 +1,20 @@
 import Slider from "react-slick";
 import "./GAReport.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const GAReport = () => {
+    
+    const settings = {
+        dots: true,
+        lazyLoad: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 2
+      };
+
     return (
         <main>
             <section className="reports-section">
@@ -93,7 +106,20 @@ const GAReport = () => {
             <section className="homework-section">
                 <h2>Homework Assignments</h2>
                 <div className="homework-container">
-
+                    <Slider {...settings}>
+                        <div className="homework-card">
+                            <img src="./images/homework/tennis-haiku.png" alt="homework screenshot" className="homework-screenshot"/>
+                        </div>
+                        <div>
+                            <img src="./images/homework/federer-trophies.png" alt="homework screenshot" className="homework-screenshot"/>
+                        </div>
+                        <div>
+                            <img src="./images/homework/calculator-app.png" alt="homework screenshot" className="homework-screenshot"/>
+                        </div>
+                        <div>
+                            <img src="./images/homework/api-generator.png" alt="homework screenshot" className="homework-screenshot"/>
+                        </div>
+                    </Slider>
                 </div>
             </section>
 
