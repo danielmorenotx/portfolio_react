@@ -14,7 +14,6 @@ const Main = () => {
             <Projects />
             <FollowMe />
             <Contact />
-            <Footer />
         </main>
     );
 };

@@ -1,17 +1,28 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from "./components/Header/Header"
 import Main from "./components/Main/Main"
-import FollowMe from "./components/Main/FollowMe/FollowMe"
-import Contact from "./components/Main/Contact/Contact"
+import GAReport from "./containers/GAReport/GAReport"
+import Footer from "./components/Footer/Footer"
 
 import "./App.css"
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Main />
-    </>
+      <Routes>
+        <Route 
+          path="/"
+          element={<Main />}
+        />
+        <Route 
+          path="/ga-report"
+          element={<GAReport/>}
+        />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;
