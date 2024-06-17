@@ -72,14 +72,9 @@
     opacity: 1;
 }
 
-@media screen and (min-width: 1025px) {
-    .projects-info {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
+@media screen and (min-width: 768px) {
     .card-link-container {
-        margin: 40px;
+        flex-direction: row;
     }
 }
 
@@ -87,5 +82,12 @@
     .projects-info {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .projects-info {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
