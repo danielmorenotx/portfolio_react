@@ -28,7 +28,7 @@
     }
 
     .about-picture {
-        display: none;
+        display: block;
         max-width: 500px;
         border-radius: 10px;
     }
