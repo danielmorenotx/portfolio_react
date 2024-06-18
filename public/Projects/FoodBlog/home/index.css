@@ -1,0 +1,395 @@
+
+/* ----- MOBILE AND SMALL TABLET SCREENS ----- */
+.off-screen-menu {
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+/* ----- formatting ----- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 360px;
+    height: 100vh;
+}
+
+.column-format {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+button {
+    margin: 10px;
+    font-weight: bold;
+    margin: 5px;
+    border:1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode,
+.dark-mode footer {
+    background: rgb(92, 91, 97);
+    color: aliceblue;
+}
+
+/* ----- header ----- */
+
+.website-header {
+    border: black solid 2px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.website-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+#account-info {
+    display: none
+}
+
+/* ----- hamburger menu ----- */
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.btn-line {
+    width: 30px;
+    height: 3px;
+    background: #2b2a2a;
+    margin: 5px;
+}
+
+.nav-links.active {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+/* ----- post an article ----- */
+.article-title {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.new-post {
+    border: none;
+    margin: 5px;
+    border: black solid 2px;
+}
+
+/* .write-blog {
+    border: black solid 2px;
+} */
+
+/* .blogs {
+    border: black solid 2px;
+} */
+
+#post-button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* ----- search article section ----- */
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sort-by {
+    margin-left: auto;
+}
+
+.sorting {
+    margin: 20px 0px;
+}
+
+/* ----- article section ----- */
+#blog-section {
+    border: black solid 2px;
+}
+
+#blog-header {
+    padding-top: 20px
+}
+
+#posted-blogs {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#blog-header {
+    margin: auto;
+}
+
+.header-link {
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
+.blog-article {
+    margin-top: 20px;
+}
+
+.blog-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ----- comments section ----- */
+.comments-section {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+}
+.write-comment {
+    width: 100%;
+    color: black;
+}
+
+.comment-button {
+    padding: 10px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.comment {
+    width: 400px;
+    margin: auto;
+}
+
+/* ----- non viewable on mobile ----- */
+.recipe-aside {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+/* =========== Light switch ============ */
+/* The switch - the box around the slider */
+
+.light-switch {
+    width: 60px;
+    height: 34px;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  /* Hide default HTML checkbox */
+  .light-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  input:checked + .slider {
+  background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+  border-radius: 34px;
+  }
+  
+  .slider.round:before {
+  border-radius: 50%;
+  }
+
+
+/* ----- LARGE TABLET AND COPUTER SCREENS ----- */
+@media screen and (min-width: 768px) {
+    /* ----- formatting ----- */
+    #main-aside {
+        display: flex;
+        flex-direction: row;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* ----- header ----- */
+    header {
+        white-space: nowrap;
+        justify-content: space-around;
+    }
+
+    .website-title {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        max-width: 600px;
+    }
+
+    #account-info {
+        display: flex;
+        flex-direction: row;
+        min-width: 200px;
+        justify-content: space-between;
+    }
+
+    #greeting {
+        margin: auto;
+    }
+
+    #account-symbol {
+        width: 50px;
+    }
+
+    /* ----- post an article ----- */
+    .blogs {
+        width: 100%;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .new-post {
+        width: 98%;
+    }
+
+    #post-button {
+        margin-left: auto;
+        width: 300px;
+    }
+
+    /* ----- article section ----- */
+    section {
+        align-items: center;
+    }
+
+    /* ----- comments section ----- */
+    .comments-section {
+        max-width: 400px;
+    }
+
+    .write-comment {
+        justify-content: center;
+        width: 400px;
+    }
+
+    .comment-button {
+        margin-left: auto;
+    }
+
+    .comment-button {
+        padding: 10px;
+        margin-left: auto;
+    }
+
+    .comment {
+        border: gray solid 1px;
+        padding: 5px
+    }
+
+    /* ----- aside section ----- */
+    .aside {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .recipe-container {
+        border: black solid 2px;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
+
+    .recipe-picture {
+        width: 400px;
+    }
+
+    .get-recipe-button {
+        margin: 30px;
+    }
+    
+    /* ----- footer ----- */
+    .footer {
+        border: black solid 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 0;
+    }
+
+    /* ----- non viewable on desktop ----- */
+
+    .menu-btn {
+        display: none;
+    }
+}

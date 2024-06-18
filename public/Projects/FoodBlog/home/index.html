@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css" rel="stylesheet" /> -->
+</head>
+<body>
+    <header class="website-header">
+        <div class="header-switch">
+            <h1 class="website-title"><span class="first-line">Inclusive</span> <span class="second-line">Foods</span></h1>
+
+            <label for="light-switch" id="light-label" class="light-switch">
+                <input type="checkbox" id="light-switch" class="light-switch" name="light-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <nav class="nav-links">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+        </nav>
+        
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        
+        </nav>
+        <div id="account-info">
+            <div id="greeting">Hi, <span id="account-username"></span></div>
+            <img src="images/social-symbol.png" alt="user pic" id="account-symbol">
+        </div>
+    </header>
+    
+    <div id="main-aside">
+        <main class="blogs">
+            <section class="column-format write-blog">
+                <textarea name="new-post" id="post-title" class="new-post" rows="1" placeholder="Title"></textarea>
+                <textarea name="post-body" id="post-body" class="new-post" rows="10" placeholder="New Post"></textarea>
+                <!-- <textarea name="post-tags" id="post-tags" class="new-post" rows="1">tags..</textarea> -->
+                <button id="post-button">post</button>
+            </section>
+            
+            <div id="search">
+                <input type="text" id="search-bar" class="sorting" name="search-bar" placeholder="Search articles...">
+                <select name="sort-by" id="sort-by" class="sorting">
+                    <option value="none">Sort by...</option>
+                    <option value="newest">Newest to oldest</option>
+                    <option value="oldest">Oldest to newest</option>
+                </select>
+            </div>
+
+            
+            <section id="blog-section" class="column-format">
+                <h2 id="blog-header">Food Blog</h2>
+                
+                <div id="posted-blogs" class="column-format">
+                <!--<article class="blog-article column-format">
+                        <div class="blog-header">
+                            <a class="header-link" href="../single_post/single_post.html"><h2 class="blog-title">Article Title</h2></a>
+                            <span class="blog-date">05/05/24</span>
+                        </div>
+                        <p class="blog-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor reiciendis voluptas consequuntur iste aperiam repellendus atque vel magnam molestias animi, aliquid incidunt, officiis perferendis cumque consectetur adipisci laudantium odit sed!</p> 
+                    
+                        <section class="comments-section column-format">
+                            
+                            <textarea name="comment" class="write-comment" rows="2" placeholder="Write comment here...">New Comment</textarea>
+                            <button class="comment-button">Post Comment</button>
+                            
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <h5 class="commenter-username">Commenter</h5>
+                                    <span class="comment-date">05/05/24</span>
+                                </div>
+                                <p class="comment-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor reiciendis voluptas consequuntur iste aperiam repellendus atque vel magnam molestias animi, aliquid incidunt, officiis perferendis cumque consectetur adipisci laudantium odit sed!</p>
+                            </div>
+                            
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <h5 class="commenter-username">Commenter</h5>
+                                    <span class="comment-date">05/05/24</span>
+                                </div>
+                                <p class="comment-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor reiciendis voluptas consequuntur iste aperiam repellendus atque vel magnam molestias animi, aliquid incidunt, officiis perferendis cumque consectetur adipisci laudantium odit sed!</p>
+                            </div>
+
+                        </section>
+                    </article> -->
+                </div>
+            </section>
+        </main>
+        
+        <aside id="recipe-aside" class="aside column-format">
+            <h3 id="daily-title">Recipe of the Day:</h3>
+            
+            <div id="recipe-container" class="recipe-container column-format">
+                <!-- <h4>Recipe Title</h4>
+                <img src="recipeSourceUrl" alt="recipe picture" class="recipe-picture">
+                <button id="get-recipe-button" class="get-recipe-button">Click here for recipe</button> -->
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <h3>Inclusive Foods</h3>
+        <h3>Made by: Daniel Moreno</h3>
+    </footer>
+
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script> -->
+<script src="home_js/mock_data.js"></script>
+<script src="home_js/local_storage.js"></script>
+<script src="home_js/post_blog.js"></script>
+<script src="home_js/comments.js"></script>
+<script src="home_js/sort_and_filter.js"></script>
+<script src="home_js/food_api.js"></script>
+</html>

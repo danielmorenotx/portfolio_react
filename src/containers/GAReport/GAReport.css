@@ -1,3 +1,7 @@
+.main-reports {
+    margin: 20px;
+}
+
 .report-container {
     display: flex;
     overflow-x: auto;
@@ -18,6 +22,58 @@ p span {
     font-weight: bold;
 }
 
+.homework-container {
+    text-align: center;
+    width: 98%;
+}
+
+.homework-card, .project-card, .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: inline-block;
+}
+
 .homework-screenshot {
-    width: 300px;
+    margin: auto;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.project-card {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.project-info {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.custom-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+.prev-arrow {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.next-arrow {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }

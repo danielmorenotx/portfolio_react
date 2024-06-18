@@ -3,6 +3,24 @@ import "./GAReport.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const CustomPrevArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+        <div className={className} onClick={onClick}>
+            <span className="custom-arrow prev-arrow">&#9664;</span>
+        </div>
+    );
+};
+
+const CustomNextArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+        <div className={className} onClick={onClick}>
+            <span className="custom-arrow next-arrow">&#9654;</span>
+        </div>
+    );
+};
+
 const GAReport = () => {
     
     const settings = {
@@ -12,11 +30,13 @@ const GAReport = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2
+        initialSlide: 2,
+        prevArrow: <CustomPrevArrow />,
+        nextArrow: <CustomNextArrow />
       };
 
     return (
-        <main>
+        <main className="main-reports">
             <section className="reports-section">
                 <h2>Weekly Reports</h2>
                 <div className="report-container">
@@ -108,16 +128,27 @@ const GAReport = () => {
                 <div className="homework-container">
                     <Slider {...settings}>
                         <div className="homework-card">
-                            <img src="./images/homework/tennis-haiku.png" alt="homework screenshot" className="homework-screenshot"/>
+                            <a href="/Projects/TennisHaiku/index.html" target="_blank"><img src="./images/homework/tennis-haiku.png" alt="Tennis Haiku Website" className="homework-screenshot"/></a>
+                            <h3>Tennis Haiku Website</h3>
+                            <p>Week 1</p>
                         </div>
-                        <div>
-                            <img src="./images/homework/federer-trophies.png" alt="homework screenshot" className="homework-screenshot"/>
+                        <div className="homework-card">
+                            <a href="/Projects/FedererTrophies/index.html" target="_blank"><img src="./images/homework/federer-trophies.png" alt="Federer Trophies" className="homework-screenshot" /></a>
+                            <h3>Roger Federer Trophy Lifts Website</h3>
+                            <p>Week 1</p>
                         </div>
-                        <div>
-                            <img src="./images/homework/calculator-app.png" alt="homework screenshot" className="homework-screenshot"/>
+                        <div className="homework-card">
+                            <a href="/Projects/CalculatorApp/index.html" target="_blank"><img src="./images/homework/calculator-app.png" alt="Calculator App" className="homework-screenshot"/></a>
+                            <h3>Calculator App</h3>
+                            <p>Week 3</p>
                         </div>
-                        <div>
-                            <img src="./images/homework/api-generator.png" alt="homework screenshot" className="homework-screenshot"/>
+                        <div className="homework-card">
+                            <a href="/Projects/RandomAPIGenerator/index.html" target="_blank"><img src="./images/homework/api-generator.png" alt="API Generator" className="homework-screenshot"/></a>
+                            <h3>API Jokes/Cats/Facts Generator</h3>
+                        </div>
+                        <div className="homework-card">
+                            <a href="/Projects/FoodBlog/home/index.html" target="_blank"><img src="./images/homework/food-blog.png" alt="Food Blog" className="homework-screenshot" /></a>
+                            <h3>Food Blog</h3>
                         </div>
                     </Slider>
                 </div>
@@ -125,7 +156,31 @@ const GAReport = () => {
 
             <section className="project-section">
                 <h2>Projects</h2>
-                <div className="project-container"></div>
+                <Slider {...settings}>
+                    <div className="project-card">
+                        <a href="/Projects/FoodBlog/home/index.html" target="_blank">
+                            <img src="./images/homework/food-blog.png" alt="Food Blog" className="homework-screenshot" />
+                        </a>
+                        <div className="project-info">
+                            <h3><span>Title: </span>Inclusive Food Block</h3>
+                            <p><span>Description: </span></p>
+                            <p><span>Score: </span></p>
+                            <p><span>Feedback:</span> "Great project. Definitely an ""I prefer backend to frontend"" attitude limiting styling efforts, but improving JS execution and experimentation. Capable of self-sufficient success or seeking help elsewhere. Trying new things outside of scope (ex: timeout)."</p>
+                        </div>
+                    </div>
+
+                    <div className="project-card">
+                        <a href="">
+                            <img src="" alt="" />
+                        </a>
+                        <div className="project-info">
+                            <h3><span>Title: </span></h3>
+                            <p><span>Description: </span></p>
+                            <p><span>Score: </span></p>
+                            <p><span>Feedback: </span></p>
+                        </div>
+                    </div>
+                </Slider>
             </section>
         </main>
     )
