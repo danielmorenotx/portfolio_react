@@ -1,18 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.css"
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false); // initial state of menuOpen is 'false'
-    
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const handleOpenMenu = () => {
         setMenuOpen(!menuOpen); // sets state to the opposite of what it is when clicked
     }
 
     const handleNavClick = (event, sectionId) => {
         event.preventDefault(); // prevents default anchor behavior
-        const offset = 200; // sets value of my offset for then scroll
 
+        if (location.pathname !== "/") {
+            // Navigate to home and scroll to the section
+            navigate(`/#${sectionId.replace("#", "")}`);
+        } else {
+            scrollToSection(sectionId);
+        }
+    };
+
+    const scrollToSection = (sectionId) => {
+        const offset = 200; // sets value of my offset for then scroll
         const section = document.querySelector(sectionId); // finds first DOM matching element
 
         // calculate scroll position
@@ -26,9 +38,14 @@ const Header = () => {
             top: sectionTop, // vertical scroll position
             behavior: "smooth" // how it scrolls to the position
         });
+    };
 
-        event.currentTarget.blur(); // removes focus after clicked
-    }
+        // Use useEffect to handle the scrolling when navigating back to the main page
+        useEffect(() => {
+            if (location.hash) {
+                scrollToSection(location.hash);
+            }
+        }, [location]);
 
 
     return (
@@ -40,16 +57,16 @@ const Header = () => {
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
                         <li className="header-link">
-                            <a href="#" className="header-link">About</a>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#about-section")}>About</Link>
                         </li>
                         <li className="header-link">
-                            <a href="#gallery-section" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</a>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</Link>
                         </li>
                         <li className="header-link">
-                            <a href="#followme-section" className="header-link" onClick={(e) => handleNavClick(e, "#followme-section")}>Follow Me</a>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#followme-section")}>Follow Me</Link>
                         </li>
                         <li className="header-link">
-                            <a href="#contact-section" className="header-link">Contact</a>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#contact-section")}>Contact</Link>
                         </li>
                     </ul>
                     
