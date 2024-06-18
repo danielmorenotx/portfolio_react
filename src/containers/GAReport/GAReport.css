@@ -51,6 +51,10 @@ a {
     flex-direction: row !important;
 }
 
+.project-picture {
+    width: 500px;
+}
+
 .project-info {
     width: 400px;
     margin-left: 20px;

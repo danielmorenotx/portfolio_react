@@ -159,10 +159,10 @@ const GAReport = () => {
                 <Slider {...settings}>
                     <div className="project-card">
                         <a href="/Projects/FoodBlog/home/index.html" target="_blank">
-                            <img src="./images/homework/food-blog.png" alt="Food Blog" className="homework-screenshot" />
+                            <img src="./images/projects/food-blog.jpg" alt="Food Blog" className="homework-screenshot" />
                         </a>
                         <div className="project-info">
-                            <h3><span>Title: </span>Inclusive Food Block</h3>
+                            <h3>Inclusive Food Blog</h3>
                             <p><span>Description: </span></p>
                             <p><span>Score: </span></p>
                             <p><span>Feedback:</span> "Great project. Definitely an ""I prefer backend to frontend"" attitude limiting styling efforts, but improving JS execution and experimentation. Capable of self-sufficient success or seeking help elsewhere. Trying new things outside of scope (ex: timeout)."</p>
@@ -170,11 +170,47 @@ const GAReport = () => {
                     </div>
 
                     <div className="project-card">
-                        <a href="">
-                            <img src="" alt="" />
+                        <a href="https://github.com/danielmorenotx/food_blog_backend" target="_blank">
+                            <img src="./images/projects/springboot-blog.jpg" alt="" className="homework-screenshot"/>
                         </a>
                         <div className="project-info">
-                            <h3><span>Title: </span></h3>
+                            <h3>Springboot Blog Project</h3>
+                            <p><span>Description: </span></p>
+                            <p><span>Score: </span></p>
+                            <p><span>Feedback: </span></p>
+                        </div>
+                    </div>
+
+                    <div className="project-card">
+                        <a href="https://github.com/danielmorenotx/dictionary_application" target="_blank">
+                            <img src="./images/projects/dictionary.jpg" alt="" className="homework-screenshot"/>
+                        </a>
+                        <div className="project-info">
+                            <h3>Dictionary App</h3>
+                            <p><span>Description: </span></p>
+                            <p><span>Score: </span></p>
+                            <p><span>Feedback: </span></p>
+                        </div>
+                    </div>
+
+                    <div className="project-card">
+                        <a href="https://github.com/danielmorenotx/League_Manager_Coop_Project" target="_blank">
+                            <img src="./images/projects/league-manager.jpg" alt="" className="homework-screenshot"/>
+                        </a>
+                        <div className="project-info">
+                            <h3>Cooperative League Manager</h3>
+                            <p><span>Description: </span></p>
+                            <p><span>Score: </span></p>
+                            <p><span>Feedback: </span></p>
+                        </div>
+                    </div>
+
+                    <div className="project-card">
+                        <a href="https://github.com/danielmorenotx/open_court_app">
+                            <img src="./images/projects/tennis.jpg" alt="" className="homework-screenshot"/>
+                        </a>
+                        <div className="project-info">
+                            <h3>Capstone Project</h3>
                             <p><span>Description: </span></p>
                             <p><span>Score: </span></p>
                             <p><span>Feedback: </span></p>
