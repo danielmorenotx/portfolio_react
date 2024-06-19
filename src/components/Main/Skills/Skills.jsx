@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Skills.css"
 
 const Skills = () => {
@@ -20,7 +21,7 @@ const Skills = () => {
     const certificateCardData = [
         {href: "https://www.credly.com/badges/83763898-e049-443d-ac0a-9c727b3929f9/public_url", src: "./images/skills/google-data-analytics-professional-certificate.png", alt: "Google Data Analytics Professional Certificate", title: "Google Data Analytics Professional Certificate"},
         {href: "https://www.credly.com/badges/3aeeec27-3e61-4cf3-ae06-9caa230c9833/public_url", src: "./images/skills/tableau-desktop-specialist.png", alt: "Tableau Desktop Specialist", title: "Tableau Desktop Specialist"},
-        {href: "https://generalassemb.ly/students/courses/software-engineering-bootcamp", src: "./images/skills/GA-Software-Developer-Certificate-of-Completion-dmoreno.jpg", alt: "General Assembly Software Developer Bootcamp", title: "General Assembly Software Developer Bootcamp"}
+        {href: "/ga-report", src: "./images/skills/GA-Software-Developer-Certificate-of-Completion-dmoreno.jpg", alt: "General Assembly Software Developer Bootcamp", title: "General Assembly Software Developer Bootcamp"}
     ]
 
     return (
@@ -57,15 +58,17 @@ const Skills = () => {
             <h2 className="subheaders">Certifications</h2>
             
             <div className="certifications">
-                {
-                certificateCardData.map((certificate, index) => {
-                    return (
-                        <a href={certificate.href} target="_blank">
-                            <img className="badge" key={index} src={certificate.src} alt={certificate.alt} title={certificate.title}/>
+                {certificateCardData.map((certificate, index) => {
+                    return certificate.href.startsWith("http") ? (
+                        <a href={certificate.href} target="_blank" key={index}>
+                            <img className="badge" src={certificate.src} alt={certificate.alt} title={certificate.title} />
                         </a>
-                    )
-                })
-                }
+                    ) : (
+                        <Link to={certificate.href} key={index}>
+                            <img className="badge" src={certificate.src} alt={certificate.alt} title={certificate.title} />
+                        </Link>
+                    );
+                })}
             </div>
         </section>
     )
