@@ -37,6 +37,12 @@ const GAReport = () => {
 
     return (
         <main className="main-reports">
+            <section>
+                <h3>Professor: <a href="https://www.linkedin.com/in/bereketbeshane/" target="_blank">Bereket Beshane</a></h3>
+                <h3>Teaching Assistant: <a href="https://www.linkedin.com/in/asha-mathis/" target="_blank">Asha Mathis</a></h3>
+                <h3>Mentor: <a href="https://www.linkedin.com/in/glenwinters/" target="_blank">Glen Winters</a></h3>
+            </section>
+
             <section className="reports-section">
                 <h2>Weekly Reports</h2>
                 <div className="report-container">
@@ -217,6 +223,90 @@ const GAReport = () => {
                         </div>
                     </div>
                 </Slider>
+            </section>
+
+            <section className="mentor-section">
+                <h2>Mentor Report</h2>
+                <p>Scoring Key: 
+                "How confident do you feel about your apprentice's learning journey?
+                <ul>
+                    <li>1 - Concerned (my apprentice does not seem confident in their skills and ability and it is impacting their performance)</li>
+                    <li>2 - Monitoring (my apprentice seems to be struggling with the material)</li>
+                    <li>3 - On track (my apprentice seems to be on track with where I expect them to be at this stage)</li>
+                    <li>4 - Confident (my apprentice is performing well)</li>
+                    <li>5 - Strong (my apprentice is performing strongly and asks thought-provoking or forward-thinking line of questioning)</li>
+                </ul>
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Week</th>
+                        <th>Score</th>
+                        <th>Feedback/Observations</th>
+                    </tr>
+                    <tr>
+                        <td>Week of 2/26</td>
+                        <td>4</td>
+                        <td>Daniel is performing well from what I can tell. He's personable and prepared for our mentor meetings. He asks specific questions rather than just asking for help, and he engages with my answers and suggestions.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 3/4</td>
+                        <td>5</td>
+                        <td>Daniel did a great job putting together the big website project, which is a significant effort at this point in the bootcamp. I was impressed how he solved most problems independently and then only needed a nudge on a few issues to finish out the project. When building the project, he wasn't just looking to get it done. He thought about how users would want to use it, how it "should" work, and what he thought might be interesting. It's good to see his passion and excitement come out.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 3/11</td>
+                        <td>5</td>
+                        <td>Daniel's staying on track and learning quickly. We're working well together in our mentorship meetings, and they seem to be productive for him.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 3/18</td>
+                        <td>5</td>
+                        <td>Daniel's doing great. He's highly engaged in his work and our mentorship calls. He's asking great questions and learning quickly.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 3/25</td>
+                        <td>5</td>
+                        <td>Daniel continues to do great. He's getting really far on his projects without significant help. He asks good questions, and he's engaged with my help.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 4/1</td>
+                        <td>5</td>
+                        <td>Daniel continues to excel. I was impressed with how well he ramped up on his Java project.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 4/8</td>
+                        <td>5</td>
+                        <td>Daniel continues to excel. He's picking up the new material quickly and asked very good, specific questions in our mentor meeting. I'm also excited that he's thinking about practical software project ideas outside of the bootcamp.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 4/15</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Week of 4/22</td>
+                        <td>5</td>
+                        <td>Daniel continues to do well. Nothing in particular to note this week.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 4/29</td>
+                        <td>5</td>
+                        <td>Daniel continues to have a good handle on the material, and he's making good progress working independently despite there being a lot of new concepts to learn. He reached out to me a few times to get unblocked on specific issues, and he did a good job of explaining the problem and working through the solution. Daniel also was a great participant in last week's 2:2 exercise, paying close attention in the session, asking good questions and helping fix a bug in the testing code.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 5/6</td>
+                        <td>5</td>
+                        <td>Daniel was highly engaged and effective in our second 2:2 session. He worked well with the other apprentice and mentor. He continues to do well with the homework and projects.</td>
+                    </tr>
+                    <tr>
+                        <td>Week of 5/13</td>
+                        <td>5</td>
+                        <td>Daniel continues to engage deeply in projects, and he's starting to think about opportunities for the capstone project.</td>
+                    </tr>
+                </table>
+
+                <p><strong>Average Score:</strong> 4.92</p>
             </section>
         </main>
     )
