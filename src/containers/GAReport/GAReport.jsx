@@ -280,11 +280,6 @@ const GAReport = () => {
                         <td>Daniel continues to excel. He's picking up the new material quickly and asked very good, specific questions in our mentor meeting. I'm also excited that he's thinking about practical software project ideas outside of the bootcamp.</td>
                     </tr>
                     <tr>
-                        <td>Week of 4/15</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td>Week of 4/22</td>
                         <td>5</td>
                         <td>Daniel continues to do well. Nothing in particular to note this week.</td>
