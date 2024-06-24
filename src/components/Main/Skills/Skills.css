@@ -1,6 +1,7 @@
 .skills-section {
     display: flex;
     flex-direction: column;
+    background-color: rgb(244, 247, 248);
 }
 
 .all-skills {

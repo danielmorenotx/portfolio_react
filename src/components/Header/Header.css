@@ -42,6 +42,7 @@ nav {
 .header-link a:focus,
 .header-link a:active {
     filter: drop-shadow(0 0 .75rem rgb(40, 40, 40));
+    outline: none;
 }
 
 .header-link:hover {
@@ -51,6 +52,11 @@ nav {
 /* reset the color when the link is not hovered or focused */
 .header-link a:focus:not(:hover) {
     color: white;
+    filter: none;
+}
+
+.header-link a:active {
+    filter: none; /* Ensure no drop shadow on active state */
 }
 
 .heading-content {

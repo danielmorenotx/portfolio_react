@@ -52,12 +52,12 @@ const Header = () => {
         <header className="heading-nav">
             <div className="heading-content">
                 
-                <h1 ><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></h1>
+                <h1><Link to="/"><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></Link></h1>
                 
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#about-section")}>About</Link>
+                            <Link to="/about" className="header-link">About</Link>
                         </li>
                         <li className="header-link">
                             <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</Link>
