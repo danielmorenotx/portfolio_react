@@ -8,13 +8,13 @@ const Contact = () => {
             <p>Fill out this form to send me an email!</p>
 
             <form action="/submit-form">
-                <label for="name">Name:</label>
+                <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" required></input>
         
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" required></input>
         
-                <label for="message">Message:</label>
+                <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
         
                 <input type="submit" value="Submit"></input>

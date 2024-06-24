@@ -12,16 +12,23 @@ const Header = () => {
         setMenuOpen(!menuOpen); // sets state to the opposite of what it is when clicked
     }
 
-    const handleNavClick = (event, sectionId) => {
+    const handleNavClick = (event, href) => {
         event.preventDefault(); // prevents default anchor behavior
 
-        if (location.pathname !== "/") {
-            // Navigate to home and scroll to the section
-            navigate(`/#${sectionId.replace("#", "")}`);
+        if (href.startsWith("/")) { // checks if it's a new page
+            navigate(href); // navigate to the desired page
+            window.scrollTo(0, 0); // scroll to the top of the page instantly
         } else {
-            scrollToSection(sectionId);
+            const sectionId = href;
+            if (location.pathname !== "/") {
+                // Navigate to home and scroll to the section
+                navigate(`/#${sectionId.replace("#", "")}`);
+            } else {
+                scrollToSection(sectionId);
+            }
         }
     };
+
 
     const scrollToSection = (sectionId) => {
         const offset = 200; // sets value of my offset for then scroll
@@ -57,10 +64,10 @@ const Header = () => {
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
                         <li className="header-link">
-                            <Link to="/about" className="header-link">About</Link>
+                            <Link to="/about" className="header-link" onClick={(e) => handleNavClick(e, "/about")}>About</Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/ga-report" className="header-link">Bootcamp</Link>
+                            <Link to="/ga-report" className="header-link" onClick={(e) => handleNavClick(e, "/ga-report")}>Bootcamp</Link>
                         </li>
                         <li className="header-link">
                             <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</Link>

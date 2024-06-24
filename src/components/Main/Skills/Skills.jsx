@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./Skills.css"
 
 const Skills = () => {
+    const navigate = useNavigate();
+
     const skillsCardData = [
         {src: "./images/skills/html.svg", alt: "html", name: "HTML" },
         {src: "./images/skills/css.svg", alt: "css", name: "CSS"},
@@ -23,6 +25,12 @@ const Skills = () => {
         {href: "https://www.credly.com/badges/3aeeec27-3e61-4cf3-ae06-9caa230c9833/public_url", src: "./images/skills/tableau-desktop-specialist.png", alt: "Tableau Desktop Specialist", title: "Tableau Desktop Specialist"},
         {href: "/ga-report", src: "./images/skills/GA-Software-Developer-Certificate-of-Completion-dmoreno.jpg", alt: "General Assembly Software Developer Bootcamp", title: "General Assembly Software Developer Bootcamp"}
     ]
+
+    const handleNavClick = (event, href) => {
+        event.preventDefault(); // Prevent the default anchor behavior
+        navigate(href); // Navigate to the desired page
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    };
 
     return (
         <section id="skills-section">
@@ -64,7 +72,7 @@ const Skills = () => {
                             <img className="badge" src={certificate.src} alt={certificate.alt} title={certificate.title} />
                         </a>
                     ) : (
-                        <Link to={certificate.href} key={index}>
+                        <Link key={index} onClick={(e) => handleNavClick(e, certificate.href)}>
                             <img className="badge" src={certificate.src} alt={certificate.alt} title={certificate.title} />
                         </Link>
                     );
