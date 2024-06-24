@@ -81,7 +81,7 @@ nav {
 
 
 /* ====== MOBILE FRIENDLY MENU ======= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1257px) {
 
     .full-nav {
         display: flex;
@@ -109,9 +109,8 @@ nav {
     }
 }
 
-
 /* ======= LARGE SCREENS ======== */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1258px) {
     .heading-nav {
         padding: 20px;
         width: 100%;
