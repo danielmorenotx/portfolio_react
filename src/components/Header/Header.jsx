@@ -67,6 +67,9 @@ const Header = () => {
                             <Link to="/about" className="header-link" onClick={(e) => handleNavClick(e, "/about")}>About</Link>
                         </li>
                         <li className="header-link">
+                            <Link to="/skills" className="header-link" onClick={(e) => handleNavClick(e, "/skills")}>Skills</Link>
+                        </li>
+                        <li className="header-link">
                             <Link to="/ga-report" className="header-link" onClick={(e) => handleNavClick(e, "/ga-report")}>Bootcamp</Link>
                         </li>
                         <li className="header-link">
