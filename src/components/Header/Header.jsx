@@ -24,42 +24,42 @@ const Header = () => {
                 // Navigate to home and scroll to the section
                 navigate(`/#${sectionId.replace("#", "")}`);
             } else {
-                scrollToSection(sectionId);
+                // scrollToSection(sectionId);
             }
         }
     };
 
 
-    const scrollToSection = (sectionId) => {
-        const offset = 200; // sets value of my offset for then scroll
-        const section = document.querySelector(sectionId); // finds first DOM matching element
+    // const scrollToSection = (sectionId) => {
+    //     const offset = 200; // sets value of my offset for then scroll
+    //     const section = document.querySelector(sectionId); // finds first DOM matching element
 
-        // calculate scroll position
-        const sectionTop = 
-            section.getBoundingClientRect() // provides the size of an element provided and position relative to viewport
-            .top //returns the distance from the top
-            + window.scrollY // returns number of pixels the doc is currently scrolled vertically
-            - offset; // subtracts what we want it to be offset by (length of header in this case)
+    //     // calculate scroll position
+    //     const sectionTop = 
+    //         section.getBoundingClientRect() // provides the size of an element provided and position relative to viewport
+    //         .top //returns the distance from the top
+    //         + window.scrollY // returns number of pixels the doc is currently scrolled vertically
+    //         - offset; // subtracts what we want it to be offset by (length of header in this case)
 
-        window.scrollTo({ // scrollTo scrolls to particular coordinates
-            top: sectionTop, // vertical scroll position
-            behavior: "smooth" // how it scrolls to the position
-        });
-    };
+    //     window.scrollTo({ // scrollTo scrolls to particular coordinates
+    //         top: sectionTop, // vertical scroll position
+    //         behavior: "smooth" // how it scrolls to the position
+    //     });
+    // };
 
         // Use useEffect to handle the scrolling when navigating back to the main page
-        useEffect(() => {
-            if (location.hash) {
-                scrollToSection(location.hash);
-            }
-        }, [location]);
+        // useEffect(() => {
+        //     if (location.hash) {
+        //         scrollToSection(location.hash);
+        //     }
+        // }, [location]);
 
 
     return (
         <header className="heading-nav">
             <div className="heading-content">
                 
-                <h1><Link to="/" onClick={(e) => handleNavClick(e, "#skills-section")}><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></Link></h1>
+                <h1><Link to="/" onClick={(e) => handleNavClick(e, "/about")}><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></Link></h1>
                 
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
@@ -73,13 +73,10 @@ const Header = () => {
                             <Link to="/ga-report" className="header-link" onClick={(e) => handleNavClick(e, "/ga-report")}>Bootcamp</Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#projects-section")}>My Work</Link>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "/projects")}>My Work</Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#followme-section")}>Follow Me</Link>
-                        </li>
-                        <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "#contact-section")}>Contact</Link>
+                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "/contact")}>Contact</Link>
                         </li>
                     </ul>
                     

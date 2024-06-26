@@ -7,18 +7,17 @@ const Footer = () => {
     return (
         <footer>
             <div>
-                <a href="https://github.com/danielmorenotx" target="_blank">
+                <a href="https://github.com/danielmorenotx" target="_blank" title="Follow me on GitHub">
                     <FaGithub className="footer-icon"/>
                 </a>
-                <a href="https://www.linkedin.com/in/danielsmoreno/" target="_blank">
+                <a href="https://www.linkedin.com/in/danielsmoreno/" target="_blank" title="Follow me on LinkeIn">
                     <FaLinkedin className="footer-icon"/>
                 </a>
-                <a href="https://www.credly.com/users/danielsmoreno/badges" target="_blank">
+                <a href="https://www.credly.com/users/danielsmoreno/badges" target="_blank" title="See my credentials">
                     <SiCredly className="footer-icon"/>
                 </a>
             </div>
-            <p className="copyright">&copy; Daniel S. Moreno</p>
-            <a href="mailto:danielmoreno409@gmail.com" ><MdOutlineMailOutline className="footer-icon"/></a>
+            <p className="copyright">&copy; 2024 Daniel S. Moreno</p>
         </footer>
     )
 }
