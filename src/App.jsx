@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from "./components/Header/Header"
-import Main from "./components/Main/Main"
 import Skills from "./containers/Skills/Skills"
 import About from "./containers/About/About"
 import GAReport from "./containers/GAReport/GAReport"
@@ -17,10 +16,6 @@ const App = () => {
       <Routes>
         <Route 
           path="/"
-          element={<Main />}
-        />
-        <Route 
-          path="/about"
           element={<About />}/>
         <Route 
           path="/skills"
