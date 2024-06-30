@@ -58,7 +58,7 @@ const Header = () => {
     return (
         <header className="heading-nav">
             <div className="heading-content">
-                
+
                 <h1><Link to="/" onClick={(e) => handleNavClick(e, "/")}><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></Link></h1>
                 
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
