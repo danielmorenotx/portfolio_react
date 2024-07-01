@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['/Users/dmoreno/Projects/portfolio_react/src/private/private.js']
+      external: ['../../private/private.js']
     }
   }
 });
