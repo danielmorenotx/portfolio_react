@@ -13,9 +13,6 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/danielsmoreno/" target="_blank" title="Follow me on LinkeIn">
                     <FaLinkedin className="footer-icon"/>
                 </a>
-                <a href="https://www.credly.com/users/danielsmoreno/badges" target="_blank" title="See my credentials">
-                    <SiCredly className="footer-icon"/>
-                </a>
             </div>
             <p className="copyright">&copy; 2024 Daniel S. Moreno</p>
         </footer>
