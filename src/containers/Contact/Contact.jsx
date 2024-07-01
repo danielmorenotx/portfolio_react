@@ -1,6 +1,6 @@
 import "./Contact.css"
 import emailjs from 'emailjs-com';
-import {emailjs_service_id, emailjs_template_id, emailjs_user_id} from "../../private/private";
+import {emailjs_service_id, emailjs_template_id, emailjs_user_id} from "/Users/dmoreno/Projects/portfolio_react/src/private/private.js";
 
 const Contact = () => {
 
