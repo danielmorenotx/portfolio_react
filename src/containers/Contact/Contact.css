@@ -53,6 +53,18 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+.submission-confirmation {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.confirmation-check {
+    color: green;
+}
+
 @media screen and (min-width: 800px) {
 
     form {
