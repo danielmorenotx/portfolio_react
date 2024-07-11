@@ -29,6 +29,10 @@ const Header = () => {
         }
     };
 
+    const isActiveLink = (path) => {
+        return location.pathname === path;
+    }
+
 
     // const scrollToSection = (sectionId) => {
     //     const offset = 200; // sets value of my offset for then scroll
@@ -58,34 +62,45 @@ const Header = () => {
     return (
         <header className="heading-nav">
             <div className="heading-content">
-
-                <h1><Link to="/" onClick={(e) => handleNavClick(e, "/")}><img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno"/></Link></h1>
-                
+                <h1>
+                    <Link to="/" onClick={(e) => handleNavClick(e, "/")}>
+                        <img className="name-logo" src="./images/Daniel.png" alt="Daniel Moreno" title="Daniel Moreno" />
+                    </Link>
+                </h1>
                 <nav className={`full-nav ${menuOpen ? "open" : ""}`}>
                     <ul className="nav-list">
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "/")}>About</Link>
+                            <Link to="/" className={`header-link ${isActiveLink("/") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/")}>
+                                About
+                            </Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/skills" className="header-link" onClick={(e) => handleNavClick(e, "/skills")}>Skills</Link>
+                            <Link to="/skills" className={`header-link ${isActiveLink("/skills") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/skills")}>
+                                Skills
+                            </Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/ga-report" className="header-link" onClick={(e) => handleNavClick(e, "/ga-report")}>Bootcamp</Link>
+                            <Link to="/ga-report" className={`header-link ${isActiveLink("/ga-report") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/ga-report")}>
+                                Bootcamp
+                            </Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "/projects")}>My Work</Link>
+                            <Link to="/projects" className={`header-link ${isActiveLink("/projects") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/projects")}>
+                                My Work
+                            </Link>
                         </li>
                         <li className="header-link">
-                            <Link to="/" className="header-link" onClick={(e) => handleNavClick(e, "/contact")}>Contact</Link>
+                            <Link to="/contact" className={`header-link ${isActiveLink("/contact") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/contact")}>
+                                Contact
+                            </Link>
                         </li>
                     </ul>
-                    
                     <button className="nav-button nav-close-button" onClick={handleOpenMenu}>
                         <FaTimes />
                     </button>
                 </nav>
             </div>
-
+            
             <button className="nav-button" onClick={handleOpenMenu}>
                 <FaBars />
             </button>
