@@ -25,82 +25,82 @@ const GAReport = () => {
 
     const mainReportData = [
         {
-          week: 1,
+          week: "Week 1",
           topic: "Dev setup, git & HTML",
           feedback: "Asks questions and adds to questions/discussions in voice & text chat. Friendly attitude while doing so. Consistent with homework thus far."
         },
         {
-          week: 2,
+          week: "Week 2",
           topic: "JS (Looping, Arrays & Functions)",
           feedback: "Up to date on deliverables and excellent work on them. Full attendance, mostly consistent with exit tickets. Consistently communicating in chat."
         },
         {
-          week: 3,
+          week: "Week 3",
           topic: "JS (Dom, Event Listeners, API calls, Fetching APIs)",
           feedback: "Up to date on deliverables. Based on labs and questions, student is progressing very well."
         },
         {
-          week: 4,
+          week: "Week 4",
           topic: "Unit Project Week",
           feedback: "Great project. Definitely an \"I prefer backend to frontend\" attitude limiting styling efforts, but improving JS execution and experimentation. Capable of self-sufficient success or seeking help elsewhere. Trying new things outside of scope (ex: timeout)."
         },
         {
-          week: 5,
+          week: "Week 5",
           topic: "Intro to Java",
           feedback: "Largely quiet, but competent. Occasionally asks a clarifying question, mostly in Slack."
         },
         {
-          week: 6,
+          week: "Week 6",
           topic: "Java Deep Dive",
           feedback: "Homework is clean and well put-together. Project progress is already very high."
         },
         {
-          week: 7,
+          week: "Week 7",
           topic: "Unit Project Week",
           feedback: "Daniel's project was excellent. Three points stand out: code comprehension, validation, and breaking things into sub-problems. He could clearly explain both his own code and what functions from outside packages could do, and spent the latter half of his project time working on creating a robust system for ensuring clean input to his system."
         },
         {
-          week: 8,
+          week: "Week 8",
           topic: "SQL",
           feedback: "Seems to have the hang of SQL. Not enough variation in SQL code or personal interaction this week to make any observations."
         },
         {
-          week: 9,
+          week: "Week 9",
           topic: "Springboot",
           feedback: "Still producing good and consistent code. Still reaches out if he encounters a problem, which is very infrequently."
         },
         {
-          week: 10,
+          week: "Week 10",
           topic: "Springboot",
           feedback: "n/a"
         },
         {
-          week: 11,
+          week: "Week 11",
           topic: "Springboot",
           feedback: "Like many other students, this week was much more difficult for Daniel. He's been wanting the class recordings and been pleased to have more time to work on the assignments, which hasn't always been the case. His response to something being more difficult is to ask for resources, work hard on it, and produce good code at the end."
         },
         {
-          week: 12,
+          week: "Week 12",
           topic: "Springboot Project Week",
           feedback: "Has reached out for much more help with this project, both to instructors and to fellow students. His work with Kathy has paid off, as he has implemented one of the harder concepts into his codebase. Project is looking very good thus far."
         },
         {
-          week: 13,
+          week: "Week 13",
           topic: "React",
           feedback: "n/a"
         },
         {
-          week: 14,
+          week: "Week 14",
           topic: "React",
           feedback: "Daniel's gotten more quiet as the course progressed, but always has asked questions if he had a blocker. He tackles assignments with a drive for efficiency, both in the code and the completion of the assignment. He's been a very good student for this instructional portion of the course and we've been happy to have him."
         },
         {
-          week: 15,
+          week: "Week 15",
           topic: "React/Capstone",
           feedback: "Learning a lot of concepts in executing on the project. Project is on track to be completed on time."
         },
         {
-          week: 16,
+          week: "Week 16",
           topic: "Capstone",
           feedback: "n/a"
         }
@@ -176,14 +176,14 @@ const GAReport = () => {
 
             <section className="project-section">
                 <h2>Projects</h2>
-                <Slider {...settings}>
+                <Slider {...settings} className="projects-slider">
                     <div className="project-card">
                         <a href="/Projects/FoodBlog/home/index.html" target="_blank">
                             <img src="./images/projects/food-blog.jpg" alt="Food Blog" className="homework-screenshot" />
                         </a>
                         <div className="project-info">
                             <h3>Inclusive Food Blog</h3>
-                            <p><span>Description: </span></p>
+                            <p><span>Description: </span>A blog that allows for posting blogs, commenting blogs, and provides a daily recipe through an API.</p>
                             <p><span>Score: </span></p>
                             <p><span>Feedback:</span> "Great project. Definitely an ""I prefer backend to frontend"" attitude limiting styling efforts, but improving JS execution and experimentation. Capable of self-sufficient success or seeking help elsewhere. Trying new things outside of scope (ex: timeout)."</p>
                         </div>
@@ -195,7 +195,7 @@ const GAReport = () => {
                         </a>
                         <div className="project-info">
                             <h3>Springboot Blog Project</h3>
-                            <p><span>Description: </span></p>
+                            <p><span>Description: </span>The backend of the previous project. This writes data and stores it in the database.</p>
                             <p><span>Score: </span></p>
                             <p><span>Feedback: </span></p>
                         </div>
@@ -207,9 +207,8 @@ const GAReport = () => {
                         </a>
                         <div className="project-info">
                             <h3>Dictionary App</h3>
-                            <p><span>Description: </span></p>
-                            <p><span>Score: </span></p>
-                            <p><span>Feedback: </span></p>
+                            <p><span>Description: </span>An app that runs in the console to which you can add words and definitions and search by different critera.</p>
+                            <p><span>Feedback: </span>Impressive work!!!!</p>
                         </div>
                     </div>
 
@@ -219,24 +218,27 @@ const GAReport = () => {
                         </a>
                         <div className="project-info">
                             <h3>Cooperative League Manager</h3>
-                            <p><span>Description: </span></p>
-                            <p><span>Score: </span></p>
-                            <p><span>Feedback: </span></p>
+                            <p><span>Description: </span>A cooporative project that was used to practice pushing and pulling to GitHub</p>
+                            <p><span>Feedback: </span>In general, looks great! The code is well written and logical. Two small things to improve on are package organization and coordinating on a shared coding style for consistency between files (optionals vs exceptions for error handling, for example).</p>
                         </div>
                     </div>
 
-                    <div className="project-card">
-                        <a href="https://github.com/danielmorenotx/open_court_app">
-                            <img src="./images/projects/tennis.jpg" alt="" className="homework-screenshot"/>
-                        </a>
-                        <div className="project-info">
-                            <h3>Capstone Project</h3>
-                            <p><span>Description: </span></p>
-                            <p><span>Score: </span></p>
-                            <p><span>Feedback: </span></p>
-                        </div>
-                    </div>
+                    
                 </Slider>
+            </section>
+
+            <section className="capstone-section">
+                <h2>Capston Project</h2>
+                <div className="capstone-card">
+                    <a href="https://github.com/danielmorenotx/open_court_app">
+                        <img src="./images/projects/tennis.jpg" alt="" className="homework-screenshot"/>
+                    </a>
+                    <div className="capstone-info">
+                        <p><span>Description: </span>An app that allows people to sign up as tennis players or tennis coaches and connect with each other for lessons.</p>
+                        <p><span>Score: </span>97/100</p>
+                        <p><span>Feedback: </span>Daniel’s project is a great demonstration of practical and thoughtful design, showcasing a highly useful and user-friendly application. The mobile-first design is impressive, ensuring optimal usability across devices. The attention to detail is evident in features like the excellent navbar dropdown animation/transition and the effective use of local storage. The filtering functionality is particularly well-executed, enhancing user experience significantly. I was impressed by the logic where coaches do not appear in search results if they sign up as coaches, which shows a deep understanding of user roles and application flow. The delete user feature is another highlight, implemented with precision. It’s clear that Daniel thoroughly thought through the business processes, resulting in a well-rounded and polished project. His hands-on approach to learning is commendable; he consistently showed a strong drive to explore the course content in depth. Daniel’s ability to quickly grasp new concepts and apply them effectively in his projects made it seem like he had prior coding experience. This capstone project is superb, and I have no doubt he would be a valuable asset to any team needing a full-stack engineer. Next step is focus more time on data structures and algorithms next (start from basic to advanced). A+ project!	</p>
+                    </div>
+                </div>
             </section>
 
             <section className="mentor-section">
