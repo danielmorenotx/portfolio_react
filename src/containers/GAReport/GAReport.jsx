@@ -113,7 +113,7 @@ const GAReport = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2,
+        initialSlide: 0,
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />
       };
