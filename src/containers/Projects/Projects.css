@@ -15,6 +15,10 @@
     width: 100%; /* Ensure it adapts to the screen size */
 }
 
+.projects-info a {
+    color: white;
+}
+
 .card-link-container {
     display: flex;
     flex-direction: column;
