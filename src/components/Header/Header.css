@@ -32,6 +32,10 @@ nav {
     text-decoration: none;
 }
 
+.header-link a {
+    color: white;
+}
+
 .active {
     text-decoration: underline;
 }
