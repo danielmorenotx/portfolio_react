@@ -1,14 +1,15 @@
 #about-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 30px;
     background-color: rgb(244, 247, 248);
 }
 
 .about-info {
-    margin: 0px 30px;
+    margin: 30px 30px;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -22,14 +23,14 @@
 }
 
 @media screen and (min-width: 1025px) {
-    #about-section {
+    /* #about-section {
         flex-direction: row;
-    }
+    } */
 
-    .about-picture {
+    /* .about-picture {
         display: block;
         max-width: 500px;
         border-radius: 10px;
         margin-right: 20px;
-    }
+    } */
 }
