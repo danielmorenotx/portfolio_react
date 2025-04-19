@@ -79,11 +79,11 @@ const Header = () => {
                                 Skills
                             </Link>
                         </li>
-                        <li className="header-link">
+                        {/* <li className="header-link">
                             <Link to="/ga-report" className={`header-link ${isActiveLink("/ga-report") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/ga-report")}>
                                 Bootcamp
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="header-link">
                             <Link to="/projects" className={`header-link ${isActiveLink("/projects") ? "active" : ""}`} onClick={(e) => handleNavClick(e, "/projects")}>
                                 My Work
